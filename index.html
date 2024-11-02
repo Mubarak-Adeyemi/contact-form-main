@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get in touch with Frontendend Mentor's support team for inquiries and help"
+    />
+    <meta name="author" content="Mubarak Adeyemi" />
+    <meta
+      name="keywords"
+      content="Contact form, general inquiry, support request, customer support, help, inquiries"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Contact Us for Inquiries and Support Frontend Mentor</title>
+  </head>
+  <body class="center-align">
+    <main class="form-container">
+      <h1 id="contact-us-header">Contact Us</h1>
+      <section aria-labelledby="contact-us-header">
+        <form action="#" id="contact-form" novalidate>
+          <div class="name-group">
+            <div class="first-name-group">
+              <label for="first-name">First name *</label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                aria-required="true"
+                aria-label="First Name"
+                aria-describedby="last-name-error"
+                aria-invalid="true"
+                autocomplete="given-name"
+                required
+              />
+              <span id="first-name-error" class="error-message"></span>
+            </div>
+
+            <div class="last-name-group">
+              <label for="last-name">Last Name *</label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                aria-required="true"
+                aria-label="Last Name"
+                aria-describedby="last-name-error"
+                aria-invalid="true"
+                autocomplete="family-name"
+                required
+              />
+              <span id="last-name-error" class="error-message"></span>
+            </div>
+          </div>
+
+          <div class="email-group">
+            <label for="email">Email Address *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+              aria-required="true"
+              aria-describedby="email-error"
+              aria-invalid="true"
+              aria-label="Email Address"
+            />
+            <span id="email-error" class="error-message"></span>
+          </div>
+          <fieldset>
+            <legend>Query Type *</legend>
+            <div
+              class="radio-group"
+              role="radiogroup"
+              aria-required="true"
+              aria-describedby="query-error"
+            >
+              <label class="center-align"
+                ><input
+                  type="radio"
+                  name="query-type"
+                  value="general"
+                  required
+                />General Enquiry</label
+              ><label class="center-align"
+                ><input
+                  type="radio"
+                  name="query-type"
+                  value="support"
+                  required
+                />Support Request</label
+              >
+              <span id="query-error" class="error-message"></span>
+            </div>
+          </fieldset>
+
+          <div class="message-group">
+            <label for="message">Message *</label>
+            <textarea
+              name="message"
+              id="message"
+              rows="5"
+              required
+              aria-required="true"
+              aria-label="message"
+              aria-describedby="message-error"
+              aria-invalid="true"
+            ></textarea>
+            <span id="message-error" class="error-message"></span>
+          </div>
+
+          <div class="checkbox-group">
+            <input
+              type="checkbox"
+              id="consent"
+              name="consent"
+              required
+              aria-required="true"
+              aria-label="Consent"
+              aria-describedby="consent-error"
+            />
+            <label for="consent"
+              >I consent to being contacted by the team *</label
+            >
+            <span id="consent-error" class="error-message"></span>
+          </div>
+
+          <button type="submit" class="submit-btn" aria-label="Submit Button">
+            Submit
+          </button>
+        </form>
+      </section>
+
+      <div
+        class="success-message"
+        role="alert"
+        aria-live="polite"
+        aria-hidden="true"
+      >
+        <h2 class="center-align">
+          <img src="/assets/images/icon-success-check.svg" alt="Success Icon" />
+          Message Sent!
+        </h2>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
